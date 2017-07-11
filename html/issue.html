@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>有空帮</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!--禁止缩放-->
+		<link rel="stylesheet" type="text/css" href="../css/data.css" />
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-datepicker.css" />
+		<link rel="stylesheet" href="../css/issue.css">
+		<!-- <link rel="stylesheet" href="../css/frame.css"> -->
+		<script language="JavaScript" src="../js/jquery-1.9.0.min.js"></script>
+		<script src="https://api.map.baidu.com/api?v=2.0&ak=ZGXvUv6arQtMS5vNzuy3BtZ0yQuyhETd&s=1" type="text/javascript"></script>
+		<script language="JavaScript" src="../js/imp.js"></script>
+	</head>
+
+	<body>
+		<form action="" name='form1' id='form1'>
+			<div id="wrap">
+				<div class="act_tit">
+					<span>主题：</span>
+					<input type="text" placeholder="请在此处写出您要求别人帮你办的事" name="title" value="">
+				</div>
+				<div class="act_time">
+					<span>日期：</span>
+					<p id="basicExample">
+						<input type="text" class="date start dateval" name="startDate" value="" />
+						<!--
+                       <input type="text" class="date end" style="display:none" name="endTime" value="" /> -->
+					</p>
+				</div>
+				<div class="tim">
+					<span>时间：</span>
+					<p id="basicExam">
+						<input type="time" class="time start timeval" name="startTime" value="" />&nbsp;—&nbsp;
+						<input type="time" class="time end" name="endData" value="" id="end" />
+						<!-- xp<input type="text" class="date end"  name="endTime" value="" /> -->
+					</p>
+				</div>
+				<div class="act_add">
+					<span>地点：</span>
+					<input type="text" placeholder="请输入办事地址" name="address" value="">
+				</div>
+				<div class="tp">
+					<span>付费方式：</span>
+					<select name="select">
+						<option>免费</option>
+						<option>收费</option>
+						<option>AA</option>
+						<option>我付费</option>
+					</select>
+				</div>
+				<div class="act_num">
+					<span>人数：</span>
+					<input type="text" placeholder="请输入办事人数" name="userNum" value="">
+				</div>
+				<div class="tp">
+					<span>权限设置：</span>
+					<select name="select">
+						<option>全部可见</option>
+						<option>好友可见</option>
+						<option>附近可见</option>
+						<option>被邀请人可见</option>
+					</select>
+				</div>
+				<div class="xq">
+					<span>详情：</span>
+				</div>
+				<textarea id="nr"></textarea>
+				<div class="user_pic">
+					<span>现场图片：</span>
+
+				</div>
+				<div class="jia1">
+
+					<img src="../img/txmr.png" id="qeq">
+					<img class="jia" src="../img/add-normal@2x 2.png">
+					<input type="file" id="button1" accept="image/*" />
+				</div>
+				<div class="submit_btn">发布办办
+				</div>
+			</div>
+		</form>
+<!-- 		<div class="footer">
+			<ul>
+				<li><img src="../img/nav-1ls.png"></li>
+				<li><img src="../img/nav-2hs.png"></li>
+				<li><img src="../img/nav-3hs.png"></li>
+				<li><img src="../img/nav-4hs.png"></li>
+			</ul>
+		</div> -->
+		<script type="text/javascript" src="../js/jquery-1.9.0.min.js" charset="UTF-8"></script>
+		<script type="text/javascript" src="../js/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="../js/jquery.timepicker.js"></script>
+		<script type="text/javascript" src="../js/jquery.datepair.js"></script>
+		<script>
+			// initialize input widgets first
+			// $('#basicExample .time').timepicker({
+			// 	'showDuration': true,
+			// 	'timeFormat': 'g:ia'
+			// });
+
+			// // $('#basicExample .date').datepicker({
+			// // 	'format': 'yyyy-mm-dd',
+			// // 	'autoclose': true
+			// // });
+
+			// // initialize datepair
+			// $('#basicExample').datepair();
+			// $('#basicExam .time').timepicker({
+			// 	'showDuration': true,
+			// 	'timeFormat': 'g:ia'
+			// });
+
+			// $('#basicExam .date').datepicker({
+			// 	'format': 'yyyy-mm-dd',
+			// 	'autoclose': true
+			// });
+
+			// initialize datepair
+			$('#basicExam').datepair();
+		</script>
+		<script language="JavaScript" src="../js/iss.js">
+		</script>
+		<script>
+			var ahao = document.getElementById("button1");
+			var bhao = document.getElementById("qeq");
+			ahao.onchange = function() {
+				$(".jia").remove();
+				if(ahao.files && ahao.files[0]) {
+					bhao.src = window.URL.createObjectURL(ahao.files[0]);
+				}
+			}
+		</script>
+	</body>
+
+</html>

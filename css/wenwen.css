@@ -1,0 +1,275 @@
+html {
+    font-size: 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+input,
+textarea,
+button,
+a {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    overflow: -Scroll;
+    overflow-x: hidden;
+    width: 16rem;
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#app li {
+    position: relative;
+    width: 90%;
+    height: auto;
+    padding: 0.6rem 0;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+}
+
+#app li .top {
+    position: relative;
+}
+
+#app li .top img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0;
+    border-radius: 0.2rem;
+}
+
+#app li .top .nikename {
+    font-size: 0.6rem;
+    color: #3092F7;
+    position: absolute;
+    left: 2.4rem;
+    top: 0.5rem;
+}
+
+#app li .top .user_msg {
+    font-size: 0.5rem;
+    position: absolute;
+    left: 2.4rem;
+    top: 1.6rem;
+    bottom: 0.5rem;
+    color: white;
+}
+
+#app li .top .jn {
+    padding: 0.05rem 0.1rem;
+    background: #3092F7;
+    border-radius: 0.1rem;
+    margin-right: 0.2rem;
+}
+
+#app li .top .zy {
+    padding: 0.05rem 0.1rem;
+    background: #9179D9;
+    border-radius: 0.1rem;
+    margin-right: 0.2rem;
+}
+
+#app li .top .ah {
+    padding: 0.05rem 0.1rem;
+    background: #00CD89;
+    border-radius: 0.1rem;
+    margin-right: 0.2rem;
+}
+
+#app li .content {
+    /*text-align: center;*/
+    margin-top: 1rem;
+}
+
+#app li .content .contents {
+    margin: 0.7rem auto;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: rgb(60, 60, 60);
+    text-indent: 1.6rem;
+    word-break: break-all;
+}
+
+#app li .content img {
+    display: block;
+    margin: 0 auto;
+    width: 9rem;
+    height: 8rem;
+    border: 0;
+    background: 0;
+    outline: none;
+}
+
+#app li .content .bao {
+    width: 80%;
+    height: auto;
+    color: #3092F7;
+    font-size: 0.6rem;
+    margin: 0.7rem 0 -0.2rem 6rem;
+}
+
+#app li .content .bao a {
+    color: #3092F7;
+}
+
+#app li .content .bao1 span,
+#app li .content .bao2 span {
+    color: #ccc;
+}
+
+#app li .content .bao span {
+    margin-left: 0.5rem;
+}
+
+
+/*大图*/
+
+.bigBox {
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.bigBox img {
+    display: block;
+    margin: 15% 0;
+    width: 100%;
+    height: 70%;
+}
+
+.none {
+    display: none;
+}
+
+#app .submit_btn a {
+    position: fixed;
+    right: 0.2rem;
+    bottom: 1.6rem;
+    display: block;
+    width: 3.5rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    margin: 1rem auto;
+    border-radius: 0.3rem;
+    outline: none;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: #FF7F00;
+    border: none;
+    -webkit-appearance: none;
+}
+
+#app .xl {
+    width: 90%;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #9E9E9E;
+    margin: 1rem auto;
+}
+
+.ont {
+    transform: rotate(90deg);
+    /*top:2rem;
+    left:15%;*/
+}
+
+#loding {
+    position: fixed;
+    width: 2.7rem;
+    height: 2.7rem;
+    left: 40%;
+    top: 18%;
+    z-index: 99;
+    background: rgba(200, 200, 200, 0.2);
+}
+
+#loding img {
+    display: block;
+    margin: 0.3rem;
+    width: 83%;
+    height: 83%;
+}
+
+.submit_btn {
+    position: fixed;
+    right: 0.2rem;
+    bottom: 1.6rem;
+    display: block;
+    width: 3.5rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    margin: 1rem auto;
+    border-radius: 0.3rem;
+    outline: none;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: #FF7F00;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.submit_btn1 a {
+    color: #fff;
+}
+
+.submit_btn1 {
+    position: fixed;
+    left: 0.2rem;
+    bottom: 1.6rem;
+    display: block;
+    width: 3.5rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    margin: 1rem auto;
+    border-radius: 0.3rem;
+    outline: none;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background: #FF7F00;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.aaa {
+    width: 8rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.6rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background: #FF7F00;
+    border-radius: 0.3rem;
+}
+
+#app .offer {
+    float: right;
+}
+
+#app .offer img {
+    float: left;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+#app .offer span {
+    float: left;
+    font-size: 0.6rem;
+    color: rgba(60, 60, 60, 0.8);
+}

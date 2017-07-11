@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>缴纳赏金</title>
+    <link rel="stylesheet" type="text/css" href="../css/pay.css">
+    <style type="text/css">
+    #nr {
+        text-indent: 1rem;
+        font-size: 0.7rem;
+        color: rgb(57, 57, 57);
+        width: 14rem;
+        height: 10rem;
+        margin: 0.2rem auto;
+        background: white;
+        display: block;
+        resize: none;
+        border: #ccc solid 1px;
+        line-height: 1.5rem;
+        font-size: 0.6rem;
+    }
+    
+    #fa {
+        width: 30%;
+        height: 1rem;
+        background: #FF7F00;
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin: 1rem auto;
+        border-radius: 0.2rem;
+        text-align: center;
+    }
+    
+    #fa a {
+        color: #fff;
+    }
+    
+    #aa {
+        text-indent: 1.5rem;
+        font-size: 0.7rem;
+        color: rgb(57, 57, 57);
+    }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="question">
+            <p class="questionMs">您的问题如下：</p>
+            <p class="questionMs1">怎么让自己的程序写的更靠谱？</p>
+        </div>
+        <p id='aa'>该问题的悬赏金额为¥100</p>
+        <p class="p1">
+            注意：赏金分配规则：
+        </p>
+        <p class="p1">
+            1:您认定的答案第一名可分得50%。
+        </p>
+        <p class="p1">
+            2:您认定的答案第二名可分的30%。
+        </p>
+        <p class="p1">
+            3:其余答案随机分得15%。
+        </p>
+        <p class="p1">
+            4:平台抽取5%的服务费。
+        </p>
+        <p class="p2">
+            5:该答案需要在24小时内完成回答，若在
+        </p>
+        <p class="p2">
+            该时间内未完成答案，金额将退回到您的
+        </p>
+        <p class="p2">
+            有空帮账户中。
+        </p>
+        <textarea id="nr" placeholder="必须填写8个字以上的内容。"></textarea>
+        <p id="fa"> <a href="answer.html">发表回答</a></p>
+    </div>
+</body>
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/vue-resource.min.js"></script>
+<script type="text/javascript" src="../js/pay.js"></script>
+<script type="text/javascript">
+(function(doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function() {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false)
+})(document, window)
+</script>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的账户</title>
+	<style>
+		#app p{
+			text-indent: 1rem;
+			font-size: 0.7rem;
+			color: rgb(57, 57, 57);	
+			border: 1px solid rgba(1,1,1,0.1)
+		}
+		#app span{
+			width: 5rem;
+			text-indent: 1rem;
+			font-size: 0.7rem;
+			color: rgb(57, 57, 57);	
+			border: 1px solid rgba(1,1,1,0.1)
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<p>零钱：¥50.00</p>
+		<p>有空币：300</p>
+		<span>充值</span><span>提现</span>
+	</div>
+</body>
+<script type="text/javascript">
+	(function(doc,win){
+		var docEl=doc.documentElement,
+			resizeEvt='orientationchange' in window ? 'orientationchange':'resize',
+			recalc=function(){
+				var clientWidth=docEl.clientWidth;
+				if(!clientWidth) return;
+				docEl.style.fontSize=20*(clientWidth/320)+'px';
+			};
+			if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+	})(document,window)
+</script>
+</html>

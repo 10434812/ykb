@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../css/ping.css" rel="stylesheet">
+		<script language="JavaScript" src="../js/jquery-1.9.0.min.js"></script>
+		<script language="JavaScript" src="../js/imp.js"></script>
+		<script language="JavaScript" src="../js/vue.js"></script>
+		<script language="JavaScript" src="../js/vue-resource.min.js"></script>
+		<title>评论</title>
+	</head>
+
+	<body>
+	<div id="app">
+		<div id="ping" v-if='isok'>
+			<div class="pin">
+				<p>
+					<span class="left" @click='isok=false'>取消</span>
+					<span class="mid">
+						<select name="select" id="select">
+							<option value="1">匿名评论</option>
+							<option value="0">实名评论</option>
+						</select>			
+					</span>
+					<span class="right" @click='pinContent'>发送</span>
+				</p>
+				<textarea id="nr" placeholder="请在此处填写您要评价的内容..."></textarea>
+			</div>
+		</div>
+		<li>
+			<div class="top" v-if='item.anonymous==0'>
+					<img :src='user_img(item.image_url)'>
+					<p class="nikename">{{item.nikename}}</p>
+					<p class="user_msg">
+						<span class="zy">{{item.specialty_info}}</span>
+						<span class="jn">{{item.profession}}</span>
+						<span class="ah">{{item.person_label}}</span>
+					</p>
+			</div>
+			<div class="content">
+				<p>{{item.content}}</p>
+				<img :src='content_img(item.imgurls)' :class='img_direction' @click='showbigimg(item.imgurls)'>
+				<div class="bao">
+					<span class="bao1" @click.once='zan(item.id)'>赞:<span>{{item.zan_num}}</span></span>
+					<span class="bao2"><a href="#" @click='comment(item)'>评:<span>{{item.pin_num}}</span></a></span>
+					<span @click='compile(item)'>编辑|分享</span>
+				</div>
+			</div>
+		</li>
+		<ul class="box">
+			<li v-for='(item,index) in evaluate'>
+				<img :src='user_imgs(item)'>
+				<p v-text="user_names(item)" class="nikename"></p>
+				<p class="contentS">{{item.pincontent}}</p>
+			</li>	
+		</ul>
+		<footer @click='pin'>
+			<p>匿名<span class="input">评论</span></p>
+		</footer>
+	</div>
+	</body>
+	<script>
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+	<script type="text/javascript" src="../js/ping.js"></script>
+</html>

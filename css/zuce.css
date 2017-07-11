@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	padding: 0.5rem 0 0 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(79, 164, 255, 1)
+}
+
+html {
+	font-size: 20px;
+}
+
+.box {
+	width: 15rem;
+	height: 12.5rem;
+	margin: 0 auto;
+}
+
+.box p {
+	position: relative;
+	width: 100%;
+	height: 2.5rem;
+	float: right;
+	background: white;
+	border-bottom: 1px solid #333333;
+	line-height: 2.5rem;
+	font-size: 0.8rem;
+	color: #696969;
+}
+
+.box p img {
+	float: left;
+	width: 1.3rem;
+	height: 1.5rem;
+	margin: 0.4rem
+}
+
+.box .bb {
+	height: 2rem;
+	border: 0;
+	background: 0;
+	text-indent: 0.5rem;
+	outline: none;
+	font-size: 0.7rem;
+}
+
+.box .b5 {
+	position: absolute;
+	right: 0.6rem;
+	top:0.6rem;
+	width: 4rem;
+	height: 1.5rem;
+	border: 1px solid #909090;
+	color: #3092F7;
+	background: 0;
+	border-radius: 0.25rem;
+	outline: none;
+	font-size: 0.6rem;
+}
+
+.box .Qd {
+	width: 100%;
+	height: 2.5rem;
+	background: url(../img/anhs.png);
+	background-size: cover;
+	text-align: center;
+	margin: 0.5rem auto;
+}
+
+.box .Qd input {
+	height: 2.5rem;
+	outline: none;
+	font-size: 0.8rem;
+	color: white;
+	background: 0;
+	border: 0;
+}

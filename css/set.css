@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html {
+	font-size: 20px;
+}
+
+.content ul {
+	width: 15.5rem;
+	float: right;
+	overflow: hidden;
+	font-size: 0.7rem;
+}
+
+.content ul li {
+	border-bottom:rgba(200,200,200,0.4) 1px solid;
+	height: 2rem;
+	line-height: 2.6rem;
+	position: relative;
+}
+
+.content ul li img {
+	
+	width: 1.3rem;
+	height: 1.3rem;
+	background-size: cover;
+	margin-left: 0.3rem;
+	display: inline;
+}
+
+.content ul li span {
+	color: #999999;
+	float: right;
+}
+
+.content ul li p {
+	display: inline;
+	position: absolute;
+	left: 3.5rem;
+	top: -0.3rem;
+	color: #1E90FF
+}
+
+.content .jt {
+	position: absolute;
+	right: 1rem;
+	bottom: 0.25rem;
+}
+
+.content ul #tx {
+	border: none;
+	height: 4rem;
+	line-height: 4rem;
+}
+
+.content #tx .jt {
+	top: 1.4rem;
+}
+
+.content ul #tx p {
+	left: 4.5rem;
+	top: 0.1rem;
+	font-size: 0.8rem;
+}
+
+.content #tou1 {
+	border-radius: 0.3rem;
+	width: 3rem;
+	height: 3rem;
+	background-size: cover;
+	margin-top: 0.7rem;
+}
+
+.content #dl p{
+	font-size: 0.9;
+	font-weight:bold;
+	color: white;
+	text-align: center;
+	line-height: 1.5rem;
+	width: 5rem;
+	height: 1.5rem;
+	background:rgb(0,111,266);
+	background-size: cover;
+	border-radius: 0.3rem;
+	margin:0.5rem 1.5rem;
+}}

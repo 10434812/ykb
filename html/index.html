@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta property="qc:admins" content="140367673621016375" />
+		<link href="../css/index.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<script type="text/javascript" src="../js/cookie.js"></script>
+		<title>有空帮</title>
+	</head>
+
+	<body>
+		<header id="bgtop">
+			<img src="../img/bgtop.png">
+		</header>
+		<section>
+			<div id="main">
+				<div class="inp" id="inp">
+					<p class="input">账号 ：<input type="tel" placeholder="请输入您的手机号" value="" name="member.mobile"></p>
+					<p class="input">密码 ：<input type="password" placeholder="请输入您的密码" value="" name="member.password"></p>
+				</div>
+			</div>
+			<div class="Dl">
+				<input type="submit" id="Dl" value="登  录">
+			</div>
+			<div id="zuce">
+				<p>
+					<a href="zuce.html">注册新账号</a>
+				</p>
+				<p class="you">
+					<a href="zhaohui.html">找回密码</a>
+				</p>
+			</div>
+		</section>
+		<div id="fenxiang">
+			<div class="weibo">
+				<img src="../img/login_logo1.png">
+				<p> 微博登录</p>
+			</div>
+			<div class="weixin">
+				<img src="../img/login_logo3.png">
+				<p> 微信登录</p>
+			</div>
+			<div class="qq" id="qqLoginBtn">
+				<img src="../img/login_logo2.png">
+				<p>QQ登录 </p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+
+</html>

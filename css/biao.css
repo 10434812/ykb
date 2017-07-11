@@ -1,0 +1,115 @@
+/*全局样式开始*/
+
+html {
+	font-size: 20px/*10 ÷ 16 × 100% = 62.5%*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+ul li,
+ol li {
+	list-style: none;
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+/*全局样式结束*/
+
+#wrap {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	position: relative;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+
+/*header开始*/
+
+.head {
+	width: 6.75rem;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	height: 2rem;
+	margin: 0 auto;
+}
+
+.head .del {
+	-box-flex: 1.0;
+	background: url(../img/yk_pic1.png) no-repeat center;
+	background-size: 0.7rem 1rem;
+	display: box;
+	-box-pack: center;
+	-box-align: center;
+}
+
+.head .add {
+	-box-flex: 1.0;
+	background: url(../img/yk_pic2.png) no-repeat center;
+	background-size: 0.7rem 1rem;
+	display: box;
+	-box-pack: center;
+	-box-align: center;
+}
+
+.head .datetime {
+	margin-top: 0.2rem;
+	color: #348ce3;
+	font-size: 0.8rem;
+	-box-pack: center;
+	-box-align: center;
+	display: block;
+	font-weight: bold;
+}
+
+#box {
+	width: 300px;
+	position: relative;
+	margin: 0 auto;
+	height: 300px;
+}
+
+canvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#imgdiv {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	top: 50%;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: -50px;
+	position: absolute;
+	overflow: hidden;
+}
+
+#imgdiv img {
+	display: block;
+	width: 100%;
+	min-height: 100%;
+	z-index: 0;
+}
+
+
+/*绘制表盘结束*/

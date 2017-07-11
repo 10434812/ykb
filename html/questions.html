@@ -1,0 +1,63 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="questions.css">
+</head>
+<body>
+	<ul class="Ww" id='app'>
+			<li class="Bt" v-for='(item,index) in someData'>
+				<div class="box">
+					<img class="Xiao" :src='item.image_url'>
+					<p class="Nc">{{item.nikename}}</p>
+					<p class="Ah">
+						<span class="jn">{{item.specialty_info}}</span >
+						<span class="zy">{{item.profession}}</span >
+						<span class="ah">{{item.person_label}}</span >
+					</p>
+				</div>
+				<p class="p">{{item.content}}</p>
+				<div class="bao" v-if='item.imgurls'>
+					<img :src=image+item.imgurls>
+				</div>
+				<div class="baoZan">
+					<span class="zan" v-on:click.once='zan(item.id,index)'>赞{{item.zan_num}}</span>
+					<span class="ping">评{{item.pin_num}}</span>
+					<span class="bj">编辑|分享</span>
+				</div>
+			</li>
+			<p class="xl">点击加载更多....</p>
+		</ul>
+		<div id="pictureBox" class="none">
+			<div id='smallBox'>
+				<img src="img/txmr.png" id='newImg' >
+			</div>
+		</div>
+		<div class="submit_btn1">发布</div>
+		<div class="submit_btn"><a href="offer.html">悬赏</a></div>
+</body>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/vue-resource.min.js"></script>
+<script type="text/javascript" src="js/questions.js"></script>
+<script type="text/javascript">
+	(function(doc,win){
+		var docEl=doc.documentElement,
+			resizeEvt='orientationchange' in window ? 'orientationchange':'resize',
+			recalc=function(){
+				var clientWidth=docEl.clientWidth;
+				if(!clientWidth) return;
+				docEl.style.fontSize=20*(clientWidth/320)+'px';
+			};
+			if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+	})(document,window)
+</script>
+</html>

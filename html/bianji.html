@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../css/bianji.css" rel="stylesheet">
+		<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+		<script language="JavaScript" src="../js/jquery-1.9.0.min.js"></script>
+		<script language="JavaScript" src="../js/imp.js"></script>
+		<script language="JavaScript" src="../js/vue.js"></script>
+		<script language="JavaScript" src="../js/vue-resource.min.js"></script>
+		<script type="text/javascript" src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<title>问问－编辑</title>
+	</head>
+
+	<body>
+	<div id="app">
+		<div id="wrap">
+			<div class="mb1">
+				<p id="bt"></p>
+			</div>
+			<div id="img">
+				<img :src='img'>
+				<input type="text" name="text" />
+			</div>
+			<div id="qwe" :class='{none:isok}'>
+				<textarea id="nr"></textarea>
+				<span @click='ok'>确定</span><span @click='ok'>取消</span>
+			</div>
+			<div class="mb2">
+				<p id="con">{{content}}</p>
+			</div>
+		</div>
+		<div class="submit_btn" @click='changeTitle'> 更改标题</div>
+	</div>
+	</body>
+	<script>
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document,window);
+	</script>
+<script type="text/javascript" src="../js/bianji.js"></script>
+</html>

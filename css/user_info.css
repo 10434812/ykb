@@ -1,0 +1,319 @@
+/*全局样式开始*/
+
+html {
+	font-size: 62.5%;
+	/*10 ÷ 16 × 100% = 62.5%*/
+}
+
+body {
+	font-size: 1.4rem;
+	/*1.4 × 10px = 14px */
+}
+
+body {
+	font: 13px/1.231 arial, helvetica, clean, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+ul li,
+ol li {
+	list-style: none;
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #E8E8E8;
+}
+
+
+/*全局样式结束*/
+
+#wrap {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.header {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	padding: 1rem 1rem;
+	background: #fff;
+}
+
+.user_pic {
+	width: 5rem;
+	height: 5rem;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.user_pic img {
+	width: 100%;
+	height: 100%;
+}
+
+.user_info {
+	-moz-box-flex: 1.0;
+	/* Firefox */
+	-webkit-box-flex: 1.0;
+	/* Safari 和 Chrome */
+	-box-flex: 1.0;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+	margin-left: 0.5rem;
+}
+
+.user_id {
+	-moz-box-flex: 1.0;
+	/* Firefox */
+	-webkit-box-flex: 1.0;
+	/* Safari 和 Chrome */
+	-box-flex: 1.0;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	color: #5A8EE1;
+}
+
+.infobottom p {
+	color: #696969；
+}
+
+.content {
+	margin-top: 1rem;
+	background: #fff;
+	padding: 1rem 1rem;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+}
+
+.cont_left {
+	color: #C68231;
+	font-size: 1.4rem;
+	width: 3rem;
+	padding-top: 3rem;
+	text-align: center;
+}
+
+.cont_center {
+	margin-left: 0.5rem;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-flex: 1.0;
+	/* Firefox */
+	-webkit-box-flex: 1.0;
+	/* Safari 和 Chrome */
+	-box-flex: 1.0;
+}
+
+.cont_center .sources {
+	background: #3092F7;
+	padding: 3px 4px;
+	height: 2.6rem;
+	color: #fff;
+	text-align: center;
+	line-height: 2.6rem;
+	font-size: 1.4rem;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+
+.cont_center .job {
+	background: #9179D9;
+	padding: 3px 4px;
+	height: 2.6rem;
+	color: #fff;
+	text-align: center;
+	line-height: 2.6rem;
+	font-size: 1.4rem;
+	border-radius: 5px;
+	margin-left: 5px;
+	height: 2.6rem;
+}
+
+.cont_center .hobby {
+	background: #00CD89;
+	padding: 3px 4px;
+	height: 2.6rem;
+	color: #fff;
+	text-align: center;
+	line-height: 2.6rem;
+	font-size: 1.4rem;
+	border-radius: 5px;
+	margin-left: 5px;
+	height: 2.6rem;
+}
+
+.cont_right {
+	width: 1.9rem;
+	margin-left: 0.5rem;
+	background: url(../img/yk_pic31.jpg) no-repeat left center;
+	background-size: 1.9rem 2.5rem;
+}
+
+.add_sources {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(../img/yk_pic36.png) no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: none;
+}
+
+.add_box {
+	background: #E6E6E6;
+	width: 80%;
+	height: 14.5rem;
+	margin-left: 10%;
+	margin-top: 10rem;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.add_tit {
+	line-height: 7rem;
+	text-align: center;
+	color: #424242;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.add_cont {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.add_cont input {
+	width: 100%;
+	display: block;
+	height: 2rem;
+	line-height: 2rem;
+	border-radius: 5px;
+	border: 1px solid #AAAAAA;
+	outline: none;
+	text-indent: 3px;
+}
+
+.add_btn {
+	margin-top: 1.5rem;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	height: 4rem;
+	border-top: 1px solid #9F9F9F;
+}
+
+.add_btn li {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-flex: 1.0;
+	/* Firefox */
+	-webkit-box-flex: 1.0;
+	/* Safari 和 Chrome */
+	-box-flex: 1.0;
+	/* 水平居中 */
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-box-pack: center;
+	/* 垂直居中 */
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-box-align: center;
+	color: #2568AF;
+	font-size: 1.5rem;
+}
+
+.footer {
+	margin-top: 1rem;
+	background: #fff;
+}
+
+.footer .userid span {
+	width: 8rem;
+	background: url(../img/yk_pic32.jpg) no-repeat left center;
+	background-size: 2.2rem 2.2rem;
+	padding-left: 2.5rem;
+	display: inline-block;
+}
+
+.footer .usersex span {
+	width: 8rem;
+	background: url(../img/yk_pic33.jpg) no-repeat left center;
+	background-size: 2.2rem 2.2rem;
+	padding-left: 2.5rem;
+	display: inline-block;
+}
+
+.footer .usersex b {
+	font-weight: normal;
+	width: 4rem;
+	height: 3rem;
+	display: inline-block;
+	line-height: 3rem;
+	text-align: center;
+	background: #CCCCCC;
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.footer .usersex b.checked {
+	background: #5EADFC;
+}
+
+.footer .userage span {
+	width: 8rem;
+	background: url(../img/yk_pic34.jpg) no-repeat left center;
+	background-size: 2.2rem 2.2rem;
+	padding-left: 2.5rem;
+	display: inline-block;
+}
+
+.footer .useradd span {
+	width: 8rem;
+	background: url(../img/yk_pic35.jpg) no-repeat left center;
+	background-size: 2.2rem 2.2rem;
+	padding-left: 2.5rem;
+	display: inline-block;
+}
+
+.footer p {
+	margin-left: 1rem;
+	border-top: 1px solid #C7C7C7;
+	height: 4rem;
+	line-height: 4rem;
+	color: #747474;
+	font-size: 1.4rem;
+}
+#container{
+	width: 100%;
+	height:30rem;
+}

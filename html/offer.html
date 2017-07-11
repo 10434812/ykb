@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>悬赏发布</title>
+	<link rel="stylesheet" type="text/css" href="../css/offer.css">
+</head>
+<body>
+<div id="app">
+	<p class="p1">请填写需要悬赏的问题。</p>
+		<textarea id="nr" placeholder="必须填写8个字以上的内容。">{{content}}</textarea>
+		<p class="sz">权限设置：
+			<select name="select" id="anonymous">
+				<option>全部可见</option>
+				<option>好友可见</option>
+				<option>附近可见</option>
+				<option>被邀请人可见</option>
+			</select>
+		</p>
+		<div class="d1">
+			<input type="file" id="file" />
+			<img class='min' src="../img/txmr.png" id="qq">
+			<img class="jia" src="../img/add-normal@2x 2.png" id="jia">
+			<!-- <canvas id="canvas"></canvas> -->
+			<span id="subPay">
+				<a :href='url|isok'>
+					支付赏金
+				</a>
+			</span>
+			<img class="zhifujia" src="../img/add-normal@2x 2.png">
+		</div>
+		<!-- <p id="ios">多图传送可
+			<a href="https://itunes.apple.com/cn/app/you-kong-bang-ren-sheng-zi/id872440340?mt=8">下载app使用</a>
+		</p> -->
+		<!-- <input type="button" value="发布问问" class="submit_btn" id="fabu" /> -->
+		<!-- <div class="submit_btn1">返回问问</div>
+		<div class="submit_btn" @:click=''><a href="pay.html">¥ 支付赏金</a></div> -->
+</div>
+</body>
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/vue-resource.min.js"></script>
+<script type="text/javascript" src="../js/offer.js"></script>
+<script type="text/javascript">
+	(function(doc,win){
+		var docEl=doc.documentElement,
+			resizeEvt='orientationchange' in window ? 'orientationchange':'resize',
+			recalc=function(){
+				var clientWidth=docEl.clientWidth;
+				if(!clientWidth) return;
+				docEl.style.fontSize=20*(clientWidth/320)+'px';
+			};
+			if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+	})(document,window)
+	var ahao = document.getElementById("file");
+	var bhao = document.getElementById("qq");
+	var jia = document.getElementById("jia");
+		ahao.onchange = function() {
+			jia.style.display="none";
+			if(ahao.files && ahao.files[0]) {
+				bhao.src = window.URL.createObjectURL(ahao.files[0]);
+			}
+		}
+</script>
+</html>

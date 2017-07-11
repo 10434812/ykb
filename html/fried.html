@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>地图找人</title>
+    <link href="../css/frame.css" rel="stylesheet" type="text/css">
+    <link href="../css/fried.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-1.9.0.min.js" type="text/jscript" language="javascript"></script>
+    <script src="https://api.map.baidu.com/api?v=2.0&ak=ZGXvUv6arQtMS5vNzuy3BtZ0yQuyhETd&s=1" type="text/javascript"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="../js/haoyou.js"></script>
+    <script src="../js/imp.js" type="text/jscript"></script>
+</head>
+
+<body>
+    <div id="loding">
+        <img src="../img/loading1.gif">
+    </div>
+    <div style='margin:0 auto;display:none;'>
+        <img src='../img/wxfxtp.png' />
+    </div>
+    <div class="content">
+        <div class="aside" style="position: fixed;top:0; z-index: 20;">
+            <ul class="itop">
+                <li>
+                    <p class="on">地图找人</p>
+                </li>
+                <li>
+                    <p>附近的人</p>
+                </li>
+                <li>
+                    <p>好友/关注</p>
+                </li>
+            </ul>
+            <ul class="ibottom">
+                <li class="on">
+                    <p>5km</p>
+                </li>
+                <li>
+                    <p>10km</p>
+                </li>
+                <li>
+                    <p>100km</p>
+                </li>
+                <li>
+                    <p>>1000km</p>
+                </li>
+            </ul>
+        </div>
+        <ul class="xinxi">
+        </ul>
+        <p class="xl" style="display: none;">点击加载更多....</p>
+        <div id="container"></div>
+    </div>
+   <!--  <div class="contents">
+        <div class="top" v-if='item.anonymous==0'>
+            <img src="../img/wxfxtp.png">
+            <p style="color:black">有空帮，是一个有趣而创富的社交平台。需要业务交流的个人或团体通过平台，可以主动发起邀约，比如联合办公，共享设备或资源分享。</p>
+            <img :src='user_img(item.image_url)'>
+            <p class="nikename">
+                {{item.nikename}}
+            </p>
+            <p class="user_msg">
+                <span class="zy">{{item.specialty_info}}</span>
+                <span class="jn">{{item.profession}}</span>
+                <span class="ah">{{item.person_label}}</span>
+            </p>
+        </div>
+    </div> -->
+    <div class="footer">
+        <ul>
+            <!--<li><img src="../img/nav-1hs.png"></li>-->
+            <li><img src="../img/nav-2hs.png"></li>
+            <li><img src="../img/nav-3ls.png"></li>
+            <li><img src="../img/nav-4hs.png"></li>
+        </ul>
+    </div>
+</body>
+<script type="text/javascript">
+(function(doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function() {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+
+</html>

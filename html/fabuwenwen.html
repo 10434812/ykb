@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../css/fabuwenwen.css" rel="stylesheet">
+		<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="../js/fabuwenwen.js"></script>
+		<script src="../js/exif.js"></script>
+		<title>发布问问</title>
+	</head>
+
+	<body>
+		<div id="app">
+		<div id="loding">
+			<img src="../img/loading1.gif">
+		</div>
+		<p class="p1">有什么事可以在这里问问大家，可以匿名哦！</p>
+		<textarea id="nr" placeholder="&nbsp&nbsp请在此处填写您要发布的内容..."></textarea>
+		<p class="sz">发布设置：
+			<select name="select" id="anonymous">
+				<option value="1">匿名发布</option>
+				<option value="0">实名发布</option>
+			</select>
+		</p>
+		<div class="d1">
+			<input type="file" id="file"  />
+			<!-- onchange="selectFileImage(this);" -->
+			<img class='min' src="../img/txmr.png" id="qq">
+			<img class="jia" src="../img/add-normal@2x 2.png">
+			<canvas id="canvas"></canvas>
+		</div>
+		<p id="ios">多图传送可
+			<a href="https://itunes.apple.com/cn/app/you-kong-bang-ren-sheng-zi/id872440340?mt=8">下载app使用</a>
+		</p>
+		<p class="submit_btn" id="fabu">发布问问</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/exif.js"></script>
+	<script>
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+		var ahao = document.getElementById("file");
+		var bhao = document.getElementById("qq");
+		ahao.onchange = function() {
+			$(".jia").remove();
+			if(ahao.files && ahao.files[0]) {
+				bhao.src = window.URL.createObjectURL(ahao.files[0]);
+			}
+		}
+	</script>
+
+</html>

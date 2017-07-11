@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>有空帮</title>
+		<link href="../css/frame.css" rel="stylesheet" type="text/css">
+		<link href="../css/set.css" rel="stylesheet" type="text/css">
+		<link rel="apple-touch-icon" href="logo-120.png">
+		<script src="../js/jquery-1.9.0.min.js" type="text/jscript" language="javascript"></script>
+		<script src="../js/cookie.js" language="JavaScript"></script>
+		<script src="../js/md5.js" language="JavaScript"></script>
+		<script src="../js/imp.js" language="javascript"></script>
+		<script src="../js/frame.js" language="JavaScript"></script>
+	</head>
+
+	<body>
+		<div class="content">
+			<ul id="mm">
+				<li id="tx"><img class="tou1" id="tou1" src="../img/txmr.png">
+					<p><strong>未登录</strong></p><img src="../img/jty.png" class="jt"></li>
+				<li><img src="../img/icon-wddd.png">
+					<p>更新个人资料<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(完善度70%)</span></p><img src="../img/jty.png" class="jt"></li>
+				<li><img src="../img/icon-tz6.png">
+					<p>通知消息</p><img src="../img/jty.png" class="jt"></li>
+				<li><img src="../img/icon-yhk6.png">
+					<p>意见反馈</p><img src="../img/jty.png" class="jt"></li>
+				<li><img src="../img/icon-tz6.png">
+					<p>清除缓存</p><img src="../img/jty.png" class="jt"></li>
+				<li><img src="../img/icon-ys6.png">
+					<p>最新加入和资料</p><img src="../img/jty.png" class="jt"></li>
+				<li><img src="../img/icon-qt6.png">
+					<p>通讯录</p><img src="../img/jty.png" class="jt"></li>
+				<li id="dl">
+					<p>退&nbsp;&nbsp;出</p>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<ul>
+				<!--<li><img src="../img/nav-1hs.png"></li>-->
+				<li><img src="../img/nav-2hs.png"></li>
+				<li><img src="../img/nav-3hs.png"></li>
+				<li><img src="../img/nav-4ls.png"></li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+
+</html>

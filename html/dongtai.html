@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../css/frame.css">
+		<link rel="stylesheet" href="../css/dongtai.css">
+		<script language="JavaScript" src="../js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script language="JavaScript" src="../js/imp.js"></script>
+		<script language="JavaScript" src="../js/dongtai.js"></script>
+		<title>有空广场</title>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div id="banner">
+				<span>问问</span>
+				<img src="../img/kong_bg.jpg" />
+				<img id="user_pic" src="../img/111.png">
+			</div>
+			<div id="Nr">
+				<ul>
+					<p class="xl">点击加载更多....</p>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<ul>
+				<!--<li><img src="../img/nav-1hs.png"></li>-->
+				<li><img src="../img/nav-2ls.png"></li>
+				<li><img src="../img/nav-3hs.png"></li>
+				<li><img src="../img/nav-4hs.png"></li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+
+</html>

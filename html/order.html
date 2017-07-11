@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>支付订单</title>
+	<link rel="stylesheet" type="text/css" href="../css/order.css">
+</head>
+<body>
+<div id="app">
+	<p class="p2">支付：</p>
+	<!-- <p class="center">¥{{money}}</p> -->
+	<p class="center">¥ 100</p>
+	<div class="pay">
+		<a href="payok.html">
+		<p class="p1">请选择支付方式</p>
+			<ul>
+				<li class="pays">
+					<img src="../img/weixinzhifu_06.png">
+					<h5>微信</h5>
+					<p>请使用微信进行付款</p>
+					<span>></span>
+				</li>
+				<li class="pays">
+					<img src="../img/zhifubao_03.png">
+					<h5>支付宝</h5>
+					<p>请使用微信进行付款</p>
+					<span>></span>
+				</li>
+				<li class="pays">
+					<img src="../img/apple_03.png">
+					<h5>apple Pay</h5>
+					<p>请使用applePay付款</p>
+					<span>></span>
+				</li>
+			</ul>
+			<!-- <img src="img/pay.png" alt="" @:click='gopay'> -->
+		</a>
+	</div>
+</div>
+</body>
+<!-- <script type="text/javascript" src="../js/vue.js"></script> -->
+<script type="text/javascript" src="../js/vue-resource.min.js"></script>
+<!-- <script type="text/javascript" src="../js/order.js"></script> -->
+<script type="text/javascript">
+	(function(doc,win){
+		var docEl=doc.documentElement,
+			resizeEvt='orientationchange' in window ? 'orientationchange':'resize',
+			recalc=function(){
+				var clientWidth=docEl.clientWidth;
+				if(!clientWidth) return;
+				docEl.style.fontSize=20*(clientWidth/320)+'px';
+			};
+			if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+	})(document,window)
+</script>
+</html>

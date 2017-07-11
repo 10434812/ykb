@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../css/zucexinxi.css" rel="stylesheet">
+		<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="../js/zucexinxi.js"></script>
+		<title>注册信息</title>
+	</head>
+
+	<body>
+		<form>
+			<div class="user_pic">
+				<img src="../img/txmr.png" id="qq">
+				<input type="file" id="q" accept="image/*">
+			</div>
+			<p class=" sc ">点击上传头像</p>
+			<p class="nc ">昵称：<input type="text " placeholder="不能填写特殊符号 "></p>
+			<p class="usersex "><span>性别：</span><b class="boy checked ">男</b><b class="girl ">女</b></p>
+			<p class="xyb">下一步</p>
+		</form>
+	</body>
+
+	<script type="text/javascript ">
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+		var a = document.getElementById("q");
+		var b = document.getElementById("qq");
+		a.onchange = function() {
+			if(a.files && a.files[0]) {
+				qq.src = window.URL.createObjectURL(a.files[0]);
+			}
+		}
+	</script>
+
+</html>

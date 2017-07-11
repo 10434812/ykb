@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="qc:admins" content="140367673621016375" />
+    <link rel="stylesheet" href="../css/wenwen.css">
+    <link rel="stylesheet" href="../css/frame.css">
+    <script src="../js/exif.js"></script>
+    <script language="JavaScript" src="../js/jquery-1.9.0.min.js"></script>
+    <script language="JavaScript" src="../js/imp.js"></script>
+    <script language="JavaScript" src="../js/vue.js"></script>
+    <script language="JavaScript" src="../js/vue-resource.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <title>问问</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 大图 -->
+        <div id="loding" v-if='loader'>
+            <img src="../img/loading1.gif">
+        </div>
+        <div class='bigBox' :class="{none:isok}" @click='isok=true'>
+            <img :src='big_url' id="images">
+        </div>
+        <div id="pay">
+            
+        </div>
+        <ul>
+            <li v-for='(item,index) in questions'>
+                <div class="top" v-if='item.anonymous==0'>
+                    <img :src='user_img(item.image_url)'>
+                    <p class="nikename">
+                        {{item.nikename}}
+                    </p>
+                    <p class="user_msg">
+                        <span class="zy">{{item.specialty_info}}</span>
+                        <span class="jn">{{item.profession}}</span>
+                        <span class="ah">{{item.person_label}}</span>
+                    </p>
+                </div>
+                <p class="offer"><img src="../img/offer.jpg"><span>悬赏回答</span></p>
+                <div class="content">
+                    <p class="contents">{{item.content}}</p>
+                    <img :src='content_img(item.imgurls)' :class='img_direction' @click='showbigimg(item.imgurls)'>
+                    <div class="bao">
+                        <span class="bao1" @click.once='zan(item.id,index)'>赞:<span>{{item.zan_num}}</span></span>
+                        <span class="bao2"><a href="#" @click='comment(item)'>评:<span>{{item.pin_num}}</span></a>
+                        </span>
+                        <span @click='compile(item)'>编辑|分享</span>
+                    </div>
+                </div>
+                <p class="aaa" @click='pay(1)'>查看问题答案(¥1.00)</p>
+                <!-- <a href="2.html">点击回答问题</a> -->
+            </li>
+            <p class="xl" @click="add_questions">点击加载更多....</p>
+            <p class="submit_btn1"><a href="fabuwenwen.html">发布</a></p>
+            <a class="submit_btn" href="select.html">悬赏</a>
+        </ul>
+    </div>
+    <div class="footer">
+        <ul>
+            <!--<li><img src="../img/nav-1hs.png"></li>-->
+            <li><img src="../img/nav-2ls.png"></li>
+            <li><img src="../img/nav-3hs.png"></li>
+            <li><img src="../img/nav-4hs.png"></li>
+        </ul>
+    </div>
+</body>
+<script>
+(function(doc, win) {
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function() {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+        };
+
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+</script>
+<script language="JavaScript" src="../js/wenwen.js"></script>
+
+</html>

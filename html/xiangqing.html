@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="../css/frame.css">
+		<link rel="stylesheet" href="../css/dongtai.css">
+		<link rel="stylesheet" href="../css/xiangqing.css">
+		<script language="JavaScript" src="../js/jquery-1.9.0.min.js"></script>
+		<script language="JavaScript" src="../js/imp.js"></script>
+		<!-- <script language="JavaScript" src="../js/wxShare.js"></script> -->
+		<script language="JavaScript" src="../js/xiangqing.js"></script>
+
+		<title>活动内容</title>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div id="Nr">
+				<ul>
+	
+				</ul>
+			</div>
+			
+			
+		</div>
+	</body>
+	<script>
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+
+</html>

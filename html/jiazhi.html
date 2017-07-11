@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="../css/jiazhi.css" rel="stylesheet">
+		<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="../js/jiazhi.js"></script>
+		<script type="text/javascript" src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<title>我在朋友圈一句话的价值</title>
+	</head>
+
+	<body>
+		<a name="shang"></a>
+		<div id="tx" style="display:none;">
+			<img id="txx" src="" crossOrigin="Anonymous"/>
+		</div>
+		<div id="moban">
+			<img src="../img/weixin.png"/>
+		</div>
+		<div class="banner">
+			<!--<p>点击图片进去问问</p>-->
+			<img src="../img/5.jpg" />
+		</div>
+		<div id="content">
+			<h4>看看你在朋友圈里的价值几何?</h4>
+			<p class="biaoti">1 您朋友圈的好友数 ?</p>
+			<ul class="renshu ">
+				<div>
+					<li><span></span>50人以内 </li>
+					<li><span></span>50-100人</li>
+					<li><span></span>100-200人</li>
+					<li><span></span>200-500人</li>
+					<li><span></span>500-1000人</li>
+					<li><span></span>1000人以上</li>
+				</div>
+			</ul>
+			<p class="biaoti">2 你目前在哪个行业工作?</p>
+			<ul class="job">
+				<div>
+					<li><span></span>互联网</li>
+					<li><span></span>高科技</li>
+					<li><span></span>金融</li>
+					<li><span></span>医药业</li>
+					<li><span></span>传媒</li>
+					<li><span></span>制造</li>
+					<li><span></span>贸易</li>
+					<li><span></span>咨询</li>
+					<li><span></span>服务业</li>
+					<li><span></span>其他</li>
+				</div>
+			</ul>
+			<p class="biaoti">你在这个行业里耕耘了几年?(单选)</p>
+			<ul class="nian">
+				<div>
+					<li><span></span>1-3年 </li>
+					<li><span></span>3-5年</li>
+					<li><span></span>5-10 </li>
+					<li><span></span>10年以上 </li>
+				</div>
+			</ul>
+			<p class="biaoti">3 你有那些爱好?(可多选)</p>
+			<ul class="aihao ">
+				<div>
+					<li><span></span>棋牌 </li>
+					<li><span></span>跑步</li>
+					<li><span></span>网球</li>
+					<li><span></span>美食</li>
+					<li><span></span>高尔夫</li>
+					<li><span></span>户外 </li>
+					<li><span></span>看电影 </li>
+					<li><span></span>舞蹈</li>
+					<li><span></span>绘画</li>
+					<li><span></span>文玩</li>
+					<li><span></span>旅游 </li>
+				</div>
+			</ul>
+			<p class="biaoti">4 你认为有以下哪些超过自己朋友圈的技能?(可多选)</p>
+
+			<ul class="jn">
+				<div>
+					<li><span></span>口才 </li>
+					<li><span></span>分析判断 </li>
+					<li><span></span>写作能力</li>
+					<li><span></span>社交能力 </li>
+					<li><span></span>实践能力 </li>
+					<li><span></span>冒险能力</li>
+				</div>
+			</ul>
+			<p id="button">开始计算</p>
+			<div id="jz">
+
+			</div>
+			<p id="ios" class="none">点击有空币下载
+				<a>有空帮app</a>
+
+			</p>
+		</div>
+		<a name="zhidao"></a>
+		<div class="gg">
+			<img src="../img/guanggao.jpg" />
+
+		</div>
+	</body>
+	<script>
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+</html>

@@ -1,0 +1,256 @@
+/*全局样式开始*/
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/}
+body {font-size: 1.4rem;/*1.4 × 10px = 14px */}
+body{font: 13px/1.231 arial,helvetica,clean,sans-serif;}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+ul li, ol li{
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y:auto; 
+}
+/*全局样式结束*/
+
+#wrap{
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	position: relative;
+	display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+/*banner开始*/
+.banner{
+	width: 100%;
+	display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    height: 17rem;
+    position: relative;
+    z-index: 1;
+    margin-top: 4rem;
+}
+.banner .bac_img{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+}
+.banner p{
+	position: absolute;
+	z-index: 99;
+	bottom: 1.3rem;
+	font-size: 1.5rem;
+	color: #fff;
+	font-weight: bold;
+	text-shadow:2px 2px 2px #000;
+	right: 8.5rem;
+}
+.banner .pict_show{
+	width: 7.3rem;
+	height: 7.3rem;
+	border: 1px solid #DCDCDC;
+	background: #fff;
+	z-index: 99;
+	position: absolute;
+	right: 0.5rem;
+	bottom: 0rem;
+}
+.banner .pict_show img{
+	padding: 1%;
+	display: block;
+	width: 98%;
+}
+/*banner结束*/
+/*header开始*/
+.acttivi_box{
+	border-bottom: 1px solid #D0D0D0;
+	margin-bottom: 1rem;
+}
+.header{
+    display:-moz-box; 
+    display: -webkit-box;
+    display: box;
+    padding: 2rem 1rem 0.5rem;
+    background: #fff;
+}
+.user_pic{
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.user_info{
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari 和 Chrome */
+    -box-flex:1.0;
+    display:-moz-box; 
+    display: -webkit-box;
+    display: box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    margin-left: 0.5rem;
+}
+.user_box{
+	display:-moz-box; 
+    display: -webkit-box;
+    display: box;
+    margin-right: 3rem;
+}
+.user_id{
+    -moz-box-flex:1.0; /* Firefox */
+    -webkit-box-flex:1.0; /* Safari 和 Chrome */
+    -box-flex:1.0;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    white-space:nowrap;
+    overflow:hidden; 
+    text-overflow:ellipsis; 
+    -o-text-overflow:ellipsis; 
+    color: #5A8EE1;
+}
+.user_km{
+	font-size: 1.5rem;
+    line-height: 2.6rem;
+    color: #767676;
+}
+.infobottom{
+    line-height: 2rem;
+}
+.infobottom .sources{
+    background: #3092F7;
+    padding: 3px 4px;
+    height: 2.6rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.6rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    height: 2.6rem;
+}
+.infobottom .job{
+    background: #9179D9;
+    padding: 3px 4px;
+    height: 2.6rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.6rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    margin-left: 5px;
+    height: 2.6rem;
+}
+.infobottom .hobby{
+    background: #00CD89;
+    padding: 3px 4px;
+    height: 2.6rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.6rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    margin-left: 5px;
+    height: 2.6rem;
+}
+.content{
+    background: #fff;
+    position: relative;
+}
+.content .right_img{
+    position: absolute;
+    top:50%;
+    margin-top: -13px;
+    right: 15px;
+}
+.cont_top{
+    margin-left: 6.2rem;
+    margin-right: 3rem;
+}
+.act_tit{
+    font-size: 1.4rem;
+    color: #040404;
+}
+.act_add{
+    color: #6B6B6B;
+    font-size: 1.2rem;
+    margin-top: 0.8rem;
+}
+.picbox img{
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+.cont_bottom{
+    margin-left: 3.4rem;
+    margin-right: 3rem;
+    padding-bottom: 2rem;
+}
+.cont_bottom .act_add{
+    background: url(../images/yk_pic11.png) no-repeat left center;
+    background-size: 1.5rem 1.5rem;
+    line-height: 2rem;
+    padding-left: 2.5rem;
+    color: #909090;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+.cont_bottom .statr_time{
+    background: url(../images/yk_pic13.png) no-repeat left center;
+    background-size: 1.5rem 1.5rem;
+    line-height: 2rem;
+    padding-left: 2.5rem;
+    color: #909090;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+.cont_bottom .statr_time b{
+    font-weight: normal;
+    color: #2C2C2C;
+}
+.cont_bottom .statr_time span{
+    padding:0.3rem 0.4rem;
+    color: #fff;
+    background: #D2CF4E;
+    margin-left: 0.5rem; 
+    border-radius: 3px;
+}
+.cont_bottom .time_length{
+    line-height: 2rem;
+    padding-left: 2.5rem;
+    color: #909090;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+.cont_bottom .price{
+    background: url(../images/yk_pic14.png) no-repeat left center;
+    background-size: 1.3rem 1.5rem;
+    line-height: 2rem;
+    padding-left: 2.5rem;
+    color: #909090;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+.cont_bottom .price span{
+    margin-left: 1rem;
+}
+.cont_bottom .people_num{
+    background: url(../images/yk_pic15.png) no-repeat left center;
+    background-size: 1.5rem 1.6rem;
+    line-height: 2rem;
+    padding-left: 2.5rem;
+    color: #909090;
+    margin-top: 0;
+    font-size: 1.2rem;
+}

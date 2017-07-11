@@ -1,0 +1,235 @@
+/*全局样式开始*/
+
+html {
+	font-size: 62.5%;
+	/*10 ÷ 16 × 100% = 62.5%*/
+}
+
+body {
+	font-size: 1.4rem;
+	/*1.4 × 10px = 14px */
+}
+
+body {
+	font: 13px/1.231 arial, helvetica, clean, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+ul li,
+ol li {
+	list-style: none;
+}
+
+html,
+body {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-bottom: 5rem;
+}
+
+input,
+textarea,
+button,
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/*全局样式结束*/
+
+#wrap {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	position: relative;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-orient: vertical;
+}
+
+.act_tit,
+.act_time,
+.act_add,
+.act_num,
+.tp,
+.tim,
+.xq,
+.user_pic {
+	height: 5rem;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	line-height: 5rem;
+	padding: 0 2rem;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+}
+
+.xq,
+.user_pic {
+	height: 3rem;
+	border: 0;
+	line-height: 3rem;
+}
+
+.act_tit span,
+.act_time span,
+.act_add span,
+.act_num span,
+.tp span,
+.tim span,
+.xq span.user_pic span {
+	font-size: 1.7rem;
+	color: rgba(0,0,0,0.7);
+	font-weight: 600;
+}
+
+.act_tit input,
+.act_add input,
+.act_num input,
+.tim input {
+	border: none;
+	outline: none;
+	font-size: 1.7rem;
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	-moz-box-flex: 1.0;
+	/* Firefox */
+	-webkit-box-flex: 1.0;
+	/* Safari 和 Chrome */
+	-box-flex: 1.0;
+	line-height: 5rem;
+}
+
+.datetime {
+	border: none;
+}
+
+#basicExample {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+}
+
+#basicExam {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+}
+
+#basicExample input {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	width: 60%;
+	border: none;
+	outline: none;
+	line-height: 5rem;
+	font-size: 1.7rem;
+}
+
+#basicExam input {
+	display: -moz-box;
+	display: -webkit-box;
+	display: box;
+	width: 30%;
+	border: none;
+	outline: none;
+	line-height: 5rem;
+	font-size: 1.5rem;
+}
+
+.submit_btn {
+	display: block;
+	width: 60%;
+	margin-left: 20%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	margin-top: 3rem;
+	border-radius: 0.5rem;
+	outline: none;
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: bold;
+	background: #FF7F00;
+	border: none;
+	-webkit-appearance: none;
+}
+
+.xq span {
+	font-size: 1.5rem;
+}
+
+.user_pic span {
+	font-size: 1.5rem;
+}
+
+#nr {
+	font-size: 1.8rem;
+	color: cornflowerblue;
+	width: 90%;
+	margin: 1rem auto;
+	text-indent: 3rem;
+	height: 10rem;
+	margin: 0.2rem auto;
+	background: rgba(165, 165, 165, 0.3);
+	display: block;
+	resize: none;
+	border: 0;
+}
+
+.user_pic {
+	position: relative;
+}
+
+#button1 {
+	display: block;
+	width: 16rem;
+	height: 16rem;
+	opacity: 0;
+	background-size: cover;
+	z-index: 999;
+}
+
+#qeq {
+	width: 16rem;
+	height: 16rem;
+	position: absolute;
+	left: 0rem;
+	top: 0
+}
+
+.jia1 {
+	position: relative;
+	display: block;
+	width: 16rem;
+	height: 16rem;
+	margin: 0 auto;
+}
+
+.jia {
+	width: 8rem;
+	height: 8rem;
+	position: absolute;
+	left: 0rem;
+	top: 0;
+}
+#basicExam input{
+	height:2rem;
+/*	display: inline-block;*/
+	margin-top:1.5rem; 
+	line-height: 2rem;
+}
+#basicExam #end{
+	/*margin-top:2rem; */
+}

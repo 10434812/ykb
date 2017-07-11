@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>悬赏发布完成</title>
+	<link rel="stylesheet" type="text/css" href="noAnswer.css">
+</head>
+<body>
+<div id="app">
+	<p class="p1">
+		目前已有3个回答，或求得更多答案
+	</p>
+	<div class="money">
+		<div>
+			<p>我的第一个答案</p>
+		</div>
+		<div>
+			<p>我的第2个答案</p>
+		</div>
+		<div>
+			<p>我的第3个答案</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="js/vue-resource.min.js"></script>
+<script type="text/javascript" src="js/noAnswer.js"></script>
+<script type="text/javascript">
+	(function(doc,win){
+		var docEl=doc.documentElement,
+			resizeEvt='orientationchange' in window ? 'orientationchange':'resize',
+			recalc=function(){
+				var clientWidth=docEl.clientWidth;
+				if(!clientWidth) return;
+				docEl.style.fontSize=20*(clientWidth/320)+'px';
+			};
+			if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+	})(document,window)
+</script>
+</html>

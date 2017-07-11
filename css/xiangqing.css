@@ -1,0 +1,188 @@
+.zhanwei {
+	width: 100%;
+	height: 0.1rem;
+	background: #AAAAAA;
+	margin: 0.7rem auto;
+}
+
+body {
+	padding-bottom: 10rem;
+}
+
+#Nr ul li .left .a2 {
+	position: absolute;
+	left: 1rem;
+	top: 14rem;
+}
+
+#Nr ul li .left .a3 {
+	position: absolute;
+	left: 1rem;
+	top: 15rem;
+}
+
+#Nr ul li .left .a4 {
+	position: absolute;
+	left: 1rem;
+	top: 16.8rem;
+}
+
+#Nr>ul>li {
+	border-bottom: 0.5rem solid #E6E6E6;
+	overflow: hidden;
+	padding: 0.5rem 0;
+}
+
+.canyu>p {
+	font-size: 0.5rem;
+	color: #333333;
+	margin-right: 0.15rem;
+	line-height: 1rem;
+	border-radius: 0.3rem;
+	display: block;
+}
+
+.canyu .user_oce span {
+	margin-right: 0.2rem;
+	font-size: 0.5rem;
+	border-radius: 0.1rem;
+	padding: 0.5rem;
+}
+
+.canyu .user_oce .jn {
+	background: #3092F7;
+}
+
+.canyu .user_oce .zy {
+	background: #9179D9;
+}
+
+.canyu .user_oce .ah {
+	background: #00CD89;
+}
+
+.canyu {
+	margin: 1rem auto;
+	width: 100%;
+	height: auto
+}
+
+.canyu>p {
+	margin: 0.5rem 1rem;
+	font-size: 0.7rem;
+}
+
+.canyu>p img {
+	width: 0.75rem;
+	height: 0.75rem;
+	margin: 0 0.4rem;
+}
+
+.cc {
+	width: 12rem;
+	height: 3rem;
+	margin: 0.6rem auto;
+	position: relative;
+	border-bottom: 1px solid #595959;
+}
+
+.cc img {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 0.25rem;
+}
+
+.cc .user_pic {
+	border-radius: 0.15rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.cc .user_name {
+	position: absolute;
+	left: 3rem;
+	top: 0;
+	font-size: 0.7rem;
+	color: #0088CC;
+}
+
+.cc .user_oce {
+	position: absolute;
+	left: 3rem;
+	top: 1rem;
+}
+
+.cc .user_oce span {
+	padding: 0.1rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	border-radius: 0.15rem;
+}
+
+.Jg {
+	font-size: 0.7rem;
+	width: 12rem;
+	height: auto;
+	margin: 0 auto;
+	position: relative
+}
+
+.Jg .j1 {
+	position: absolute;
+	left: 0.3rem;
+	top: 0.5rem;
+}
+
+.Jg .j1 span {
+	color: #595959;
+	margin: 0 0.3rem;
+	font-size: 0.7rem;
+}
+
+.Jg .j2 {
+	color: #595959;
+	position: absolute;
+	right: 1rem;
+	top: 1.5rem;
+	font-size: 0.7rem;
+	width: 5rem;
+	text-align: center;
+}
+.Jg .j3{
+	display: block;
+	color: #595959;
+	position: absolute;
+	right: 0.8rem;
+	top: 6rem;
+	font-size: 0.7rem;
+	width: 5rem;
+	text-align: center;
+}
+
+.Ty {
+	font-weight: bold;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	background: white;
+	text-align: center;
+	line-height: 3rem;
+}
+
+.Ty input {
+	border-radius: 1rem;
+	width: 12rem;
+	height: 1.6rem;
+	background: url(../img/anhs.png);
+	background-size: cover;
+	line-height: 1rem;
+	text-align: center;
+	margin: 0 auto;
+	outline: none;
+	font-size: 0.8rem;
+	color: white;
+}

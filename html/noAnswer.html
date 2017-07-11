@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>缴纳赏金</title>
+	<link rel="stylesheet" type="text/css" href="../css/noAnswer.css">
+</head>
+<body>
+<div id="app">
+	<div class="question">
+		<p class="questionMs">您的问题如下：</p>
+		<p class="questionMs1">怎么让自己的程序写的更靠谱？</p>
+	</div>
+	<p class="p1">
+		目前还未有人回答问题，可通过转发求得答案。
+	</p>
+	<div class="money">
+		<img src="../img/share.png">
+		<!-- <p class="p1">微信</p>
+		<p class="p1">微博</p>
+		<p class="p1">QQ</p> -->
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/vue-resource.min.js"></script>
+<!-- <script type="text/javascript" src="js/noAnswer.js"></script>
+ --><script type="text/javascript">
+	(function(doc,win){
+		var docEl=doc.documentElement,
+			resizeEvt='orientationchange' in window ? 'orientationchange':'resize',
+			recalc=function(){
+				var clientWidth=docEl.clientWidth;
+				if(!clientWidth) return;
+				docEl.style.fontSize=20*(clientWidth/320)+'px';
+			};
+			if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false)
+	})(document,window)
+</script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+	<head>
+		<meta charset="UTF-8">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>地图找人</title>
+		<link href="../css/frame.css" rel="stylesheet" type="text/css">
+		<link href="../css/appfirend.css" rel="stylesheet" type="text/css">
+		<script src="../js/jquery-1.9.0.min.js" type="text/jscript" language="javascript"></script>
+		<script src="https://api.map.baidu.com/api?v=2.0&ak=ZGXvUv6arQtMS5vNzuy3BtZ0yQuyhETd&s=1" type="text/javascript"></script>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<script type="text/javascript" src=" https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<!-- 这是微信分享 -->
+		<script src="../js/imp.js" type="text/jscript"></script>
+	</head>
+
+	<body>
+		<div id="loding">
+			<img src="../img/loading1.gif">
+		</div>
+		<div id="alert">
+		<p>等待对方确定</p>
+		<h5>OK</h5>
+		</div>
+		<div style='margin:0 auto;display:none;'>
+			<img src='../img/wxfxtp.png' />
+		</div>
+		<div class="content">
+			<div class="aside" style="position:fixed;top:0;z-index: 20;">
+				<ul class="ibottom">
+					<li class="on">
+						<p>5km</p>
+					</li>
+					<li>
+						<p>10km</p>
+					</li>
+					<li>
+						<p>100km</p>
+					</li>
+					<li>
+						<p>>1000</p>
+					</li>
+
+				</ul>
+			</div>
+			<div id="container" class="none"></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if(!clientWidth) return;
+					docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+				};
+
+			if(!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		})(document, window);
+	</script>
+	<script type="text/javascript" src="../js/appfriend.js"></script>
+
+</html>

@@ -1,0 +1,193 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.banner {
+	width: 100%;
+	height: 6.6rem;
+}
+
+.banner img {
+	width: 100%;
+	height: 100%;
+}
+
+#moban {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(1, 1, 1, 0.6);
+	display: none;
+}
+
+#moban img {
+	float: right;
+}
+
+html {
+	font-size: 20px;
+	/*font-family: "微软雅黑";*/
+}
+
+body {
+	padding-bottom: 5rem;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+li {
+	width: 80%;
+	list-style: none;
+	float: left;
+	line-height: 1.6rem;
+	font-size: 0.7rem;
+}
+
+li span {
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	border: rgba(27, 0, 0, 0.5) solid 0.07rem;
+	border-radius: 50%;
+	margin-right: 0.3rem;
+}
+
+#content {
+	width: 14.6rem;
+	margin: 0 auto;
+	height: auto;
+}
+.banner p{
+	font-size: 0.7rem;
+	color: #CCCCCC;
+	position:absolute;
+	left: 0.5rem;
+	top:4rem;
+}
+
+h4 {
+	text-align: center;
+	width: 100%;
+	margin: 0.4rem auto;
+}
+
+.gg {
+	width: 11rem;
+	height: 10rem;
+	margin: 0 auto;
+	margin-top: 3rem;
+}
+
+.gg img {
+	width: 100%;
+	height: 100%;
+}
+
+.biaoti {
+	font-size: 0.8rem;
+	color: rgb(255, 177, 0);
+	margin: 0.4rem 0;
+	clear: both;
+	margin-left: 0.5rem;
+}
+
+ul {
+	width: 100%;
+	height: auto;
+	border: rgb(247, 247, 247) solid 0.1rem;
+	border-radius: 0.3rem;
+	background: rgb(238, 251, 252);
+	overflow: auto;
+}
+
+ul div {
+	width: 80%;
+	margin: 0 2rem;
+}
+
+.none {
+	display: none;
+}
+
+.on {
+	background: orange;
+}
+
+.renshu li,
+.nian li,
+.jn li {
+	width: 50%;
+}
+
+.job li,
+.aihao li {
+	width: 33%;
+}
+
+.aihao span,
+.jn span {
+	border-radius: 0;
+}
+
+#button {
+	background: url(../img/anhe.png);
+	width: 8rem;
+	height: 1.6rem;
+	margin: 0.3rem auto;
+	text-align: center;
+	line-height: 1.6rem;
+	color: white;
+	border-radius: 0.3rem;
+	margin-top: 1rem;
+}
+
+#jz {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.red1 {
+	margin: 0.3rem auto;
+	color: black;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.red {
+	margin: 0.5rem auto;
+	margin-top: 1rem;
+	color: red;
+	font-size: 1.5rem;
+	transform: rotate(-15deg);
+}
+
+.red span {
+	color: #000000;
+	font-size: 1rem;
+}
+
+.red a {
+	text-decoration: none;
+	color: darkorange;
+	font-size: 0.8rem;
+}
+
+#ios {
+	margin-top: 0.5rem;
+	font-size: 0.6rem;
+	float: right;
+}
+
+#ios a {
+	font-size: 0.5rem;
+	color: blue;
+}
+
+#kk {
+	font-size: 0.5rem;
+	color: #CCCCCC;
+	text-align: center;
+}
